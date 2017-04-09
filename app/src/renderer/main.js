@@ -1,22 +1,18 @@
 import Vue from 'vue'
 import Electron from 'vue-electron'
-import Resource from 'vue-resource'
 import Router from 'vue-router'
 import App from './App'
-import routes from './routes'
-import Api from './api';
-Vue.use(Electron)
-Vue.use(Resource)
-Vue.use(Router)
-Vue.config.debug = true
+import router from 'router'
+import Api from 'api';
+import store from 'store'
 
-const router = new Router({
-  scrollBehavior: () => ({ y: 0 }),
-  routes
-})
+Vue.use(Electron);
+
+Vue.config.debug = true
 
 /* eslint-disable no-new */
 new Vue({
   router,
+  store,
   ...App
 }).$mount('#app')

@@ -1,0 +1,19 @@
+body, #app, .App--base {
+    height: 100%;
+}
+$fa-font-path: "~font-awesome/fonts";
+
+@import "~font-awesome/scss/font-awesome.scss";
+
+.ArticleShow__title {
+    margin-bottom: 0px;
+}
+
+@charset "utf-8";
+
+@import "./variables";
+
+@import "~bulma/bulma.sass";
+
+
+@import "./app/components/components";

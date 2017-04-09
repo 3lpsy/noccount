@@ -94,18 +94,34 @@ let rendererConfig = {
     libraryTarget: 'commonjs2',
     path: path.join(__dirname, 'app/dist')
   },
-  resolve: {
-    alias: {
-      'components': path.join(__dirname, 'app/src/renderer/components'),
-      'renderer': path.join(__dirname, 'app/src/renderer')
+    resolve: {
+        alias: {
+            'vue': path.join(__dirname, 'app/node_modules/vue/dist/vue.common.js'),
+            'main': path.join(__dirname, 'app/src/renderer/main'),
+            'bw': path.join(__dirname, 'app/src/main/modules/bw'),
+            'low': path.join(__dirname, 'app/src/main/modules/low'),
+            'renderer': path.join(__dirname, 'app/src/renderer'),
+            'api': path.join(__dirname, 'app/src/renderer/api'),
+            'assets': path.join(__dirname, 'app/src/renderer/assets'),
+            'pages': path.join(__dirname, 'app/src/renderer/pages'),
+            'store': path.join(__dirname, 'app/src/renderer/store'),
+            'router': path.join(__dirname, 'app/src/renderer/router'),
+            'guards': path.join(__dirname, 'app/src/renderer/router/guards'),
+            'contants': path.join(__dirname, 'app/src/renderer/contants'),
+            'common': path.join(__dirname, 'app/src/renderer/modules/common'),
+            'daemon': path.join(__dirname, 'app/src/renderer/modules/daemon'),
+            'home': path.join(__dirname, 'app/src/renderer/modules/home'),
+            'mbox': path.join(__dirname, 'app/src/renderer/modules/mbox'),
+            'manage': path.join(__dirname, 'app/src/renderer/modules/manage'),
+
+        },
+        extensions: ['.js', '.vue', '.json', '.css', '.node'],
+        modules: [
+            path.join(__dirname, 'app/node_modules'),
+            path.join(__dirname, 'node_modules')
+        ]
     },
-    extensions: ['.js', '.vue', '.json', '.css', '.node'],
-    modules: [
-      path.join(__dirname, 'app/node_modules'),
-      path.join(__dirname, 'node_modules')
-    ]
-  },
-  target: 'electron-renderer'
+    target: 'electron-renderer'
 }
 
 

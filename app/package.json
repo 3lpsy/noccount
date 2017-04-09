@@ -4,13 +4,19 @@
   "description": "An Account Manager",
   "main": "./dist/main.js",
   "dependencies": {
+    "bulma": "^0.3.1",
+    "command-exists": "^1.2.1",
+    "cryptr": "^2.0.0",
+    "find-process": "^1.0.5",
+    "font-awesome": "^4.7.0",
+    "lowdb": "^0.15.5",
     "vue": "^2.1.10",
+    "vue-bulma-switch": "^1.0.4",
     "vue-electron": "^1.0.6",
     "vue-resource": "^1.0.3",
     "vue-router": "^2.1.2",
     "vuex": "^2.1.1",
     "zerorpc": "*"
-
   },
   "devDependencies": {},
   "author": ""

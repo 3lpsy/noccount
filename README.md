@@ -1,4 +1,4 @@
-## While this project will evolve, currently it is just an example of using electron, vue and python through the zerorpc server.
+## At this stage, the project is just an example of using electron, vue and python through the zerorpc server. Do  not know if I'll get around to building out the actual logic.
 
 ### Requirements
 
